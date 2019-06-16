@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+	#hello{width:800px;height:480px;border:1px;overflow:hidden;margin:auto;}
+	#word{margin:auto;width:150px;}
+	</style>
+    <title>My garden</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+      .bs-docs-footer {
+        background-color: #e68dc4;
+        color: #aa7eec;
+        padding-top: 50px;
+        padding-bottom:50px;
+        width: 100%;
+        text-align: left;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 style="text-align:center">Welcome to my garden!</h1>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="garden.html">花园主页</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+			<li class="dropdown">
+              <a href="yhhy.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">樱花花园 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+				<li role="separator" class="divider"></li>
+                <li><a href="#jj">简介</a></li>
+				<li role="separator" class="divider"></li>
+                <li><a href="#xt">形态</a></li>
+				<li role="separator" class="divider"></li>
+                <li><a href="#zp">栽培</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#yf">预防</a></li>
+              </ul>
+            </li>
+			<li><a href="qthy.html">·其它花园</a></li>
+			<li><a href="flqd.html">·法罗群岛</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">查找</button>
+          </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<div id="hello">
+	 <img src="yhhy/yh0.jpg" alt="yh0" style="height:480px;width:800px">
+	 <img src="yhhy/yh1.jpg" alt="yh1" style="height:480px;width:800px">
+	 <img src="yhhy/yh2.jpg" alt="yh2" style="height:480px;width:800px">
+	 <img src="yhhy/yh3.jpg" alt="yh3" style="height:480px;width:800px">
+	 <img src="yhhy/yh4.jpg" alt="yh4" style="height:480px;width:800px">
+	 <img src="yhhy/yh5.jpg" alt="yh5" style="height:480px;width:800px">
+	 <img src="yhhy/yh6.jpg" alt="yh6" style="height:480px;width:800px">
+	 <img src="yhhy/yh7.jpg" alt="yh7" style="height:480px;width:800px">
+	 <img src="yhhy/yh8.jpg" alt="yh8" style="height:480px;width:800px">
+	 <img src="yhhy/yh9.jpg" alt="yh9" style="height:480px;width:800px">
+	</div>
+ 
+	 <div style="text-align:center">
+	  <input type="button" value="上一张" onclick="a()";>
+	  <input type="button" value="下一张" onclick="b()";>
+	 </div>
+ 
+	<script>
+	 function a(){
+	    $('#hello').find('img').eq(0).appendTo($('#hello'));
+	 }
+	 function b(){
+	 	$('#hello').find('img:last').eq(0).prependTo($('#hello'));
+	 }
+	</script>
+ 
+	<hr>
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-10 mx-auto">
+          <h2 class="first-setion" id="jj" style="text-align:center">简介</h2>
+          <p>樱花（学名：Cerasus sp.），蔷薇科樱属几种植物的统称，在《中国植物志》新修订的名称中专指“东京樱花”，亦称“日本樱花”。樱花品种相当繁多，数目超    过三百种以上，全世界共有野生樱花约150种，中国有50多种。全世界约40种樱花类植物野生种祖先中。其他的则是通过园艺杂交所衍生得到的品种。<br>
+			 樱花原产北半球温带环喜马拉雅山地区，在世界各地都有生长，主要在日本国生长。花每枝3到5朵，成伞状花序，花瓣先端缺刻，花色多为白色、粉红色。花常于3月与叶同放或叶后开花，随季节变化，樱花花色幽香艳丽，常用于园林观赏。樱花可分单瓣和复瓣两类，单瓣类能开花结果，复瓣类多半不结果。<br>
+			 据文献资料考证，两千多年前的秦汉时期，樱花已在中国宫苑内栽培。唐朝时樱花已普遍出现在私家庭院。当时万国来朝，日本朝拜者将樱花带回了东瀛，其在日本已有1000多年的历史。樱花象征热烈、纯洁、高尚。</p>
+		  <h2 class="second-setion" id="xt" style="text-align:center">形态</h2>
+          <p>樱花樱花是 乔木，高4-16米，树皮灰色。小枝淡紫褐色，无毛，嫩枝绿色，被疏柔毛。冬芽卵圆形，无毛。叶片椭圆卵形或倒卵形，长5-12厘米，宽2.5-7厘	   米，先端渐尖或骤尾尖，基部圆形，稀楔形，边有尖锐重锯齿，齿端渐尖，有小腺体，上面深绿色，无毛，下面淡绿色，沿脉被稀疏柔毛，有侧脉7-10对；叶    柄长1.3-1.5厘米，密被柔毛，顶端有1-2个腺体或有时无腺体；托叶披针形，有羽裂腺齿，被柔毛，早落。<br>
+			 花序伞形总状，总梗极短，有花3-4朵，先叶开放，花直径3-3.5厘米；总苞片褐色，椭圆卵形，长6-7毫米，宽4-5毫米，两面被疏柔毛；苞片褐色，匙状长圆形，长约5毫米，宽2-3毫米，边有腺体；花梗长2-2.5厘米，被短柔毛；萼筒管状，长7-8毫米，宽约3毫米，被疏柔毛；萼片三角状长卵形，长约5毫米，先端渐尖，边有腺齿；花瓣白色或粉红色，椭圆卵形，先端下凹，全缘二裂；雄蕊约32枚，短于花瓣；花柱基部有疏柔毛。<br>
+			 核果近球形，直径0.7-1厘米，黑色，核表面略具棱纹。花期4月，果期5月。<br>
+			 樱花为 温带、 亚热带树种，性喜阳光和温暖湿润的气候条件，有一定抗寒能力。对 土壤的要求不严，宜在疏松肥沃、排水良好的砂质壤土生长，但不耐盐碱土。根系较浅，忌积水低洼地。有一定的耐寒和耐旱力，但对烟及风抗力弱，因此不宜种植有台风的沿海地带。</p> 
+		  <h2 class="third-setion" id="zp" style="text-align:center">栽培</h2>
+          <p>樱花（蔷薇科樱属植物）以 播种、 扦插和 嫁接繁育为主。以播种方式养殖樱花，注意勿使种胚干燥，应随采随播或湿沙层积后翌年春播。嫁接养殖可用樱桃    、山樱桃的实生苗作砧木。在3月下旬切接或8月下旬芽接，接活后经3年到4年培育，可出圃栽种。<br>
+		  <b>播种：</b>有结实樱花种子采后就播，不宜干燥。因种子有休眠或经沙藏于次年春播，以培育实生苗作嫁接之用。<br>
+		  <b>扦插：</b>在春季用一年生硬枝，夏季用当年生嫩枝。扦插可用NAA处理，苗床需遮阴保湿与通气良好的介质才有高的成活率。<br>
+		  <b>嫁接：</b>因樱花多数种类不会结实，因此,嫁接可用樱桃或山樱桃作站木，于3月下旬切接或8月下旬芽接均可。接活后经3-4年的培育，可出圃栽种。樱花也    可髙枝换头嫁接，将削奵的接穗用劈接法插入砧木，用塑料袋缠紧，套上塑料袋以保温防护，成活率髙，可用来更换新品种。<br>
+		  <b>栽种：</b>栽植前要把地整平，可挖直径宽0.8米乘以深0.6米的坑，坑里先填入10公分的有机肥，把苗放进坑里，使苗的根向四周伸展。樱花填土后，向上提    一下苗使根深展开，在进行踏实。栽植深度在离苗根上层5厘米左右，栽好后浇水，充分灌溉，用棍子架好，以防大风吹倒。栽种时，每坑槽施腐熟堆肥15公斤    -25公斤，7月每株施 硫酸铵1公斤-2公斤。花后和早春发芽前，需剪去枯枝、病弱枝、徒长枝，尽量避免粗枝的修剪，以保持树冠圆满。<br>
+		  <b>修剪：</b>修剪主要是剪去枯萎枝、徒长枝、重叠枝及病虫枝。另外，一般大樱花树干上长出许多枝条时，应保留若干长势健壮的枝条，其余全部从基部剪掉    ，以利通风透光。修剪后的枝条要及时用药物消毒伤口，防止雨淋后病菌侵入，导致腐烂。樱花经太阳长时期的暴晒，树皮易老化损伤，造成腐烂，应及时将    其除掉并进行消毒处理。之后，用腐叶土及炭粉包扎腐烂部位，促其恢复正常生理机能。</p> 
+		  <h2 class="fourth-setion" id="yf" style="text-align:center">预防</h2>
+		  <p>樱花主要应预防流胶病和根瘤病，以及蚜虫、红蜘蛛、介壳虫等虫害。流胶病为蛾类钻入树干产卵所致，可以用尖刀挖出虫卵，同时改良土壤，加强水肥管理。根瘤病会导致病树的根无法正常生长，不管怎样施肥，树还是不健壮。要及时切除肿瘤，进行土壤消毒处理，利用腐叶土、木炭粉及微生物改良土壤。<br>
+			 樱花对于蚜虫、红蜘蛛、介壳虫等病虫害应以预防为主，每年喷药3至4次，第一次在花前，第二次在花后，第三次在7至8月。<br>
+			 樱花病虫害种类较多，现将其常见的病虫害分述如下：<Br>
+			 <b>一、穿孔性褐斑病：</b>在5至6月时发生，叶出现紫褐色小点，后渐扩大成圆形，病斑部位干燥收缩后成为小孔、病菌多在病枝病叶上过冬，发育最适温度为25℃至28℃，借风传播，在多雨季节有利于侵染发病，树势衰弱，排水不良，通风透光差时，病害发生严重。<br>
+			 <b>防治方法：</b><br>
+			（1）加强栽培管理，合理整枝修剪，并注意剪掉病梢，及时清理病叶并烧毁，为植株创造干净的生长条件。<br>
+			（2）新梢萌发前，可喷洒3至5波美度石硫合剂，发病期可喷洒160倍波尔多液或50%苯来特可湿性粉剂1000至2000倍液，或15%代森锌600倍液至800倍液。<br>
+			 <b>二、叶枯病:</b>夏季叶上发生黄绿色的圆形斑点，后变褐色，散生黑色小粒点，病叶枯死但并不脱落。</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+	<hr>
+
+	<div class="clearfix">
+       <a class="btn btn-primary" href="#">返回 &rarr;</a>
+	</div>
+	<hr>
+
+	<footer>
+	 <p style="text-align:center">copyright &copy; 网页制作</p>
+	</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
