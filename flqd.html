@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+	#hello{width:800px;height:480px;border:1px;overflow:hidden;margin:auto;}
+	#word{margin:auto;width:150px;}
+	</style>
+    <title>My garden</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+      .bs-docs-footer {
+        background-color: #e68dc4;
+        color: #aa7eec;
+        padding-top: 50px;
+        padding-bottom:50px;
+        width: 100%;
+        text-align: left;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 style="text-align:center">Welcome to my garden!</h1>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="garden.html">花园主页</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+			<li><a href="yhhy.html">·樱花花园</a></li>
+			<li><a href="qthy.html">·其它花园</a></li>
+			<li class="dropdown">
+              <a href="yhhy.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">法罗群岛<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+				<li role="separator" class="divider"></li>
+                <li><a href="#dl">地理</a></li>
+				<li role="separator" class="divider"></li>
+                <li><a href="#zz">政治</a></li>
+				<li role="separator" class="divider"></li>
+                <li><a href="#jj">经济</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+		   <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">查找</button>
+           </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<div id="hello">
+	 <img src="flqd/flqd0.jpg" alt="qd0" style="height:480px;width:800px">
+	 <img src="flqd/flqd1.jpg" alt="qd1" style="height:480px;width:800px">
+	 <img src="flqd/flqd2.jpg" alt="qd2" style="height:480px;width:800px">
+	 <img src="flqd/flqd3.jpg" alt="qd3" style="height:480px;width:800px">
+	 <img src="flqd/flqd4.jpg" alt="qd4" style="height:480px;width:800px">
+	 <img src="flqd/flqd5.jpg" alt="qd5" style="height:480px;width:800px">
+	 <img src="flqd/flqd6.jpg" alt="qd6" style="height:480px;width:800px">
+	 <img src="flqd/flqd7.jpg" alt="qd7" style="height:480px;width:800px">
+	 <img src="flqd/flqd8.jpg" alt="qd8" style="height:480px;width:800px">
+	</div>
+ 
+	 <div style="text-align:center">
+	  <input type="button" value="上一张" onclick="a()";>
+	  <input type="button" value="下一张" onclick="b()";>
+	 </div>
+ 
+	<script>
+	 function a(){
+	    $('#hello').find('img').eq(0).appendTo($('#hello'));
+	 }
+	 function b(){
+	 	$('#hello').find('img:last').eq(0).prependTo($('#hello'));
+	 }
+	</script>
+ 
+	<hr>
+
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-10 mx-auto">
+          <h2 class="first-setion" id="dl" style="text-align:center">地理</h2>
+          <p>欧洲大西洋北部的火山群岛。位于挪威、苏格兰、设得兰群岛和冰岛之间的北大西洋海域。是西北欧到冰岛航线的中途站。在北纬61°25'-62°25'和两经		   6°19'-7°40'之间，分布有18个小岛和岩礁，其中17个岛有居民。较大的岛屿有斯特勒姆、东岛、南岛等。多山，冰斗、U形谷发育，最高点海拔882米。各岛海    岸线曲折，多峡湾。海岸线总长1117公里。平均海拔高度300米。属温带海洋性气候,1月平均气温3.4℃，7月10.3℃。年均降水量1168毫米，雾日200多天。海    鸟群集。沿海盛产鱼类，居民主要以捕鱼为主。养羊业亦盛。<br>
+			 北大西洋岛群，在冰岛和设得兰群岛(Shetland Islands)之间，构成丹麦王国内一自治社区。由17个有居民岛和一个无人小岛和岩礁组成，总面积1,399平方公里(540平方哩)。主要岛屿有斯特伦(Streym)、东岛(Eysturoy)、沃格(Vagar)、南岛(Sudhuroy)、桑岛(Sandoy)和博罗伊(Bordhoy)。首府托沙芬(Torshavn)在斯特伦岛上。<br>
+			 <b>地貌:</b>岛屿由覆盖冰川堆石或泥炭土壤的火山岩构成，地势高耸崎岖，有险陡的峭壁。最高点在东岛的斯莱塔拉山(Slaettaratindur)，海拔882公尺(2,894尺)。有被深狭谷隔开的平坦山顶。海岸线非常曲折，有峡湾，汹涌的潮流激荡着岛屿间狭窄的水道。<br>
+			 <b>气候:</b>为温和的海洋性气候，气温变化不大，常有雾和雨。年降雨量约1,500公厘(60寸)。由于北大西洋暖流影响，港口相对无冰冻。</p>
+		  <h2 class="second-setion" id="zz" style="text-align:center">政治</h2>
+          <p>群岛为丹麦国内一自治社区，派两名代表(每隔四年选举一次)参加丹麦一院制议会(Folketing)。法罗群岛议会有32名选举产生的议员，议员再选举一个以主席    为首的行政机构。丹麦议会监管法罗群岛的外交、防务、货币和司法部门。驻群岛专员代表丹麦国王。教育以丹麦教育制度为基础。有几家医院和良好的医疗    服务。<br>
+			 <b>政体:</b>设有自治议会和自治政府。经济、金融、交通通讯、文化、环境、地下资源、工商和市政建设由自治政府负责；教育、卫生和社会事务由丹麦政府和自治政府共同负责；司法、货币、国防和外交事务由丹麦政府掌管。总督由丹君主任命。在丹麦议会中有2个席位。近年来，法罗群岛独立呼声日高。2000年法罗群岛自治政府与丹麦政府就独立问题进行了四轮谈判，双方虽在使用共同货币等问题上取得了初步谅解，但在丹提供财政补贴和减免债务等关键问题上未能达成一致，在行政合作、两地公民享受对等权利方面也分歧严重。谈判于10月完全破裂,自治政府宣布将于2001年5月26日就启动独立进程问题举行全民公决。<br>
+			 <b>议会:</b>自治议会（Loegting）每4年选举一次，共有32个议席，分7个选区按比例代表制普选产生。本届议会于1998年4月大选产生。其中共和党8席，人民党8席，社会民主党7席，联合党6席，自治党2席，中间党1席。议长：芬伯吉?伊斯卡森（Finnbogi Isakson，共和党）。<br>
+			 <b>政府:</b>本届自治政府于1998年4月大选后组成，共有8名成员：主席安芬?凯尔斯伯（Anfinn Kallsbery，人民党），主管外交、通讯、地方事务；会格尼·霍达尔（Hoegni Hoydal，共和党），主管自治、司法和北欧事务；约翰·彼得森（John Petersen,人民党）,主管渔业和渔业加工；斯格纳·阿·布尼（Signara Brunni，共和党），主管教育和文化；卡斯汀·汉森（Karstin Hansen,共和党），主管财政和经济；芬伯吉·阿格（Finnbogi Arge,人民党），主管工商事务；伊得恩·伊尔特舆（Eydun Eltoer,自治党），主管石油和环境事务；赫丽娜·达姆·阿·尼尔斯特比（Helena Dama Neystaboe,自治党），主管社会和卫生事务。</p> 
+		  <h2 class="third-setion" id="jj" style="text-align:center">经济</h2>
+          <p>概况：1900年后，群岛从农业社会(主要养羊)发展成为经济以渔业和有关行业(特别是干鳕鱼出口)为基础的地区。1977年渔区的界线扩展到370公里(220浬)。    辅助经济项目有捕鸟和养羊(羊毛供出口或用于当地小型家庭纺织业)。南岛开采煤矿。耕地仅约2%；主要作物有马铃薯、其他蔬菜和羊饲草。主要进口燃料、    必需的工业品和运输设备。主要港口为托沙芬。沃格岛有机场。群岛与丹麦、冰岛之间有定期的海上交通。夏季时与谢德兰群岛有船运来往。<br>
+			 90年代初经济出现困难，近年逐渐好转。渔业资源丰富。除鱼产品和部分羊肉能自给外，工业品主要进口。捕鱼和鱼产品加工业在经济中占主导地位，产值约占国内生产总值1/4，鱼产品占出口总额96%以上。旅游业发展较快，手工业、建筑业、贸易、服务和运输业也在法罗群岛经济中占有一定地位。<br>
+			 <b>国内生产总值（1999年）：</b>74.4亿丹麦克朗（约合10.66亿美元）。<br>
+			 <b>人均国内生产总值（1999年）:</b>18.8万丹麦克朗（约合2.73万美元）。<br>
+			 <b>经济增长率：</b>6%<br>
+			 <b>货币名称：</b>法罗克朗（同丹麦克朗等值）。<br>
+			 <b>汇率（2000年平均值）：</b>1美元=8.09克朗。<br>
+			 <b>失业率:</b>11%<br>
+			（<b>资料来源:</b>法罗群岛统计局2000年数据）<br>
+			 <b>渔业:</b>渔业在经济中占重要地位。主要捕捞鳕鱼、黑线鳕、鲱鱼、鲭鱼、军曹鱼及虾。2008年捕鱼量达52.1万吨。拥有20万吨以上渔船150艘，总吨位约10.4万吨。<br>
+			 <b>农业:</b>由于夏季气温低，仅能种植马铃薯和一些蔬菜。草场茂盛，畜牧业较发达。主要饲养羊、牛和马。农业人口只占人口总数1%。1998年养羊8万只、牛2149头.<br>
+			 <b>金融:</b>近几年财政收支情况如下（单位：亿克朗）:199819992000;收入29.8734.735.8;支出29.4233.129.7</p> 
+        </div>
+      </div>
+    </div>
+  </article>
+
+	<hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-left" href="#">返回 &rarr;</a>
+          </div>
+    <hr>
+
+	<footer>
+	<p style="text-align:center">copyright &copy; 网页制作</p>
+	</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
